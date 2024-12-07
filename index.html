@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoFriendly Store</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="https://files.oaiusercontent.com/file-LqNf2zTWgG5R7WYw9fi3v1?se=2024-12-07T06%3A07%3A11Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D82e95abd-2788-486b-b99e-820e2c7bdc22.webp&sig=aJ7X/bNnzN3mZJMIYp/TU6bNIsceepLXd/jXlvzUPWg%3D" alt="Logo EcoFriendly Store" class="logo">
+            <h1>EcoFriendly Store</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <!-- Productos Destacados -->
+        <section class="products">
+            <h2>Productos Destacados</h2>
+            <div class="product-grid">
+                <!-- Producto 1 -->
+                <div class="product">
+                    <img src="https://bolsapublicitaria.cl/wp-content/uploads/2020/01/bolsa-reutilizable-medium-3.jpg" alt="Bolsa Reutilizable">
+                    <h3>Bolsa Reutilizable</h3>
+                    <p class="price">$12.99</p>
+                    <p class="rating">★★★★☆</p>
+                </div>
+                <!-- Producto 2 -->
+                <div class="product">
+                    <img src="https://www.belen.com.do/wp-content/uploads/2024/09/BB27485.jpg" alt="Cubiertos de Bambú">
+                    <h3>Cubiertos de Bambú</h3>
+                    <p class="price">$15.50</p>
+                    <p class="rating">★★★★★</p>
+                </div>
+                <!-- Producto 3 -->
+                <div class="product">
+                    <img src="https://www.kreaideas.pe/files/productos/1067.jpg" alt="Botella Metálica">
+                    <h3>Botella Metálica</h3>
+                    <p class="price">$18.00</p>
+                    <p class="rating">★★★★★</p>
+                </div>
+                <!-- Producto 4 -->
+                <div class="product">
+                    <img src="https://materialesecologicos.es/wp-content/uploads/2019/04/jabones-ecologicos.jpg" alt="Jabón Ecológico">
+                    <h3>Jabón Ecológico</h3>
+                    <p class="price">$6.99</p>
+                    <p class="rating">★★★★☆</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulario de Contacto -->
+        <section class="contact">
+            <h2>Contáctanos</h2>
+            <form action="#" method="POST">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit" class="btn">Enviar Mensaje</button>
+            </form>
+
+            <div class="map">
+                <h3>Encuéntranos aquí:</h3>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.2232506786377!2d-69.85656028454604!3d18.489903787278236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ea8964c79c54685%3A0x736d7d21885b71d3!2sMegacentro!5e0!3m2!1ses!2sdo!4v1701767629316!5m2!1ses!2sdo" 
+                    width="400" 
+                    height="250" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 EcoFriendly Store | Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

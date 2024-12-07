@@ -1,0 +1,177 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #2ecc71;
+    color: white;
+    padding: 1rem 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+/* Logo circular */
+.logo {
+    width: 80px; /* Ajusta el tamaño del logo */
+    height: 80px; /* Hacemos la altura igual al ancho para hacerlo circular */
+    border-radius: 50%; /* Esto hace el logo circular */
+    object-fit: cover; /* Asegura que la imagen se recorte correctamente para ajustarse al círculo */
+    margin-right: 10px;
+    vertical-align: middle; /* Alinea el logo con el texto */
+}
+
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-left: 1.5rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #27ae60;
+}
+
+/* Productos */
+.products {
+    padding: 2rem;
+    text-align: center;
+    background: #f0f0f0;
+}
+
+.products h2 {
+    margin-bottom: 1.5rem;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.product {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product h3 {
+    margin: 0.5rem 0;
+    color: #27ae60;
+}
+
+.product .price {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.product .rating {
+    color: #f39c12;
+}
+
+/* Formulario de Contacto */
+.contact {
+    padding: 2rem;
+    background: #fff;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact label {
+    margin: 0.5rem 0 0.3rem;
+    text-align: left;
+}
+
+.contact input, 
+.contact textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contact input:focus, 
+.contact textarea:focus {
+    border-color: #27ae60;
+    box-shadow: 0 0 5px rgba(39, 174, 96, 0.5);
+}
+
+.contact button {
+    background: #27ae60;
+    color: white;
+    border: none;
+    padding: 0.7rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.contact button:hover {
+    background: #2ecc71;
+}
+
+.map iframe {
+    border-radius: 10px;
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 400px; /* Ajusta el ancho máximo del mapa */
+    height: 250px;    /* Ajusta la altura del mapa */
+    margin: 0 auto;   /* Centra el mapa */
+}
