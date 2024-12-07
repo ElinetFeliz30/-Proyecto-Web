@@ -28,17 +28,6 @@ header .container {
     padding: 0 1rem;
 }
 
-/* Logo circular */
-.logo {
-    width: 80px; /* Ajusta el tamaño del logo */
-    height: 80px; /* Hacemos la altura igual al ancho para hacerlo circular */
-    border-radius: 50%; /* Esto hace el logo circular */
-    object-fit: cover; /* Asegura que la imagen se recorte correctamente para ajustarse al círculo */
-    margin-right: 10px;
-    vertical-align: middle; /* Alinea el logo con el texto */
-}
-
-
 header h1 {
     font-size: 1.8rem;
 }
